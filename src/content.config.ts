@@ -34,6 +34,7 @@ const albums = defineCollection({
       title: z.string(),
       description: z.string().optional(),
       cover: image(),
+      album: z.string(),
     }),
 });
 
