@@ -12,4 +12,10 @@ export const SITE = {
   showArchives: false,
   showBackButton: true, // show back button in post detail
   dynamicOgImage: true,
+
+  editPost: {
+    url: "https://github.com/grenmon2202/grenmon.xyz/edit/main/src/content/posts/", // Change to your repo path
+    appendFilePath: true,
+    text: "Edit",
+  },
 } as const;
