@@ -27,7 +27,7 @@ const { album } = Astro.props;
 let images = await getAlbumImages(album.data.album);
 
 // Function to shuffle images (Fisher-Yates algorithm)
-function shuffleArray(array) {
+function shuffleArray(array: object[]) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
@@ -35,6 +35,12 @@ function shuffleArray(array) {
 }
 
 shuffleArray(images); // Shuffle images before rendering
+type ImageType = {
+  src: string;
+  width: number;
+  height: number;
+  // Include any additional properties that your images might have.
+};
 ---
 
 <Layout>
@@ -51,7 +57,7 @@ shuffleArray(images); // Shuffle images before rendering
           class="mx-auto container my-8 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5 text-center"
         >
           {
-            images.map((image) => (
+            images.map((image: ImageType) => (
               <Image
                 src={image.src}
                 width={image.width}
