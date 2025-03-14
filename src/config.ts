@@ -14,7 +14,7 @@ export const SITE = {
   dynamicOgImage: true,
 
   editPost: {
-    url: "https://github.com/grenmon2202/grenmon.xyz/edit/main/src/content/posts/", // Change to your repo path
+    url: "", // Change to your repo path
     appendFilePath: true,
     text: "Edit",
   },
