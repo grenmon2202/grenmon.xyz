@@ -1,6 +1,7 @@
 export const SITE = {
   website: "https://grenmon2202.github.io", // replace this with your deployed domain
   base: "grenmon.xyz",
+  output: "static",
   author: "Grenmon",
   profile: null,
   desc: "Grenmon/Harsh Meena's personal website.",
