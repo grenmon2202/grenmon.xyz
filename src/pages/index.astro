@@ -8,7 +8,6 @@ import LinkButton from "@/components/LinkButton.astro";
 import Card from "@/components/Card.astro";
 import Hr from "@/components/Hr.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
-import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
@@ -25,9 +24,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Grenmon
+        Ciao!
       </h1>
-      <a
+      <!-- <a
         target="_blank"
         class="inline-block"
       >
@@ -37,10 +36,10 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           class="scale-125 stroke-accent stroke-3"
         />
         <span class="sr-only">RSS Feed</span>
-      </a>
+      </a> -->
 
       <p>
-        Ciao! I am Harsh, but my friends know me as Grenmon. 
+        I am Harsh, but my friends know me as Grenmon. 
       </p>
       <p class="mt-2">
         I am engaged in the corporate grind by day. By night, you will find me juggling being a Astrophotographer,

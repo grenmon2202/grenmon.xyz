@@ -3,9 +3,10 @@ import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
 import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
-import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
-import IconPinterest from "@/assets/icons/IconPinterest.svg";
+import IconInstagram from "@/assets/icons/IconInstagram.svg";
+import IconYoutube from "@/assets/icons/IconsYoutube.svg";
+import IconTwitch from "@/assets/icons/IconsTwitch.svg";
 import { SITE } from "@/config";
 
 export const LOCALE = {
@@ -15,10 +16,28 @@ export const LOCALE = {
 
 export const SOCIALS = [
   {
+    name: "Instagram",
+    href: "https://www.instagram.com/harshy_2212/",
+    linkTitle: ` ${SITE.title} on Instagram`,
+    icon: IconInstagram,
+  },
+  {
     name: "Github",
     href: "https://github.com/grenmon2202",
     linkTitle: ` ${SITE.title} on Github`,
     icon: IconGitHub,
+  },
+  {
+    name: "Youtube",
+    href: "https://www.youtube.com/@gr3nmon",
+    linkTitle: ` ${SITE.title} on YouTube`,
+    icon: IconYoutube,
+  },
+  {
+    name: "Twitch",
+    href: "https://twitch.tv/gr3nmon",
+    linkTitle: ` ${SITE.title} on Twitch`,
+    icon: IconTwitch,
   },
   {
     name: "X",
