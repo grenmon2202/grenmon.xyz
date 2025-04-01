@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from "@/layouts/Layout.astro";
+import VideoLayout from "@/layouts/VideoLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import Socials from "@/components/Socials.astro";
@@ -21,7 +21,7 @@ const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 ---
 
-<Layout>
+<VideoLayout>
   <Header />
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6 flex flex-col sm:flex-row sm:items-center gap-6">
@@ -122,7 +122,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     </div>
   </main>
   <Footer />
-</Layout>
+</VideoLayout>
 
 <script>
   document.addEventListener("astro:page-load", () => {

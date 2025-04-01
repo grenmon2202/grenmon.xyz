@@ -4,7 +4,7 @@ author: grenmon
 pubDatetime: 2022-06-06T04:06:31Z
 slug: why-look-at-the-moon
 featured: true
-draft: true
+draft: false
 tags:
   - Astronomy
   - Astrophotography
