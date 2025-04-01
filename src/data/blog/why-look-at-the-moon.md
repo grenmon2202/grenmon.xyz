@@ -15,13 +15,12 @@ description:
   Covering a personal journey from deep space obsession to rediscovering the overlooked beauty of the moon. It's a story headlined by a forgotten DSLR, a centuries-old spyglass, and one scrawny dude's curiosity - all colliding across 1500 light-years, posing a deceptively simple question - Why bother looking at the moon?
 ---
 
-## Table of contents
 
-<figure>
-  <img
-    src = "https://res.cloudinary.com/dbedc1qsu/image/upload/v1741950017/_MG_1691_iqjlwa.jpg"
-  />
-</figure>
+<img
+  src = "https://res.cloudinary.com/dbedc1qsu/image/upload/v1741950017/_MG_1691_iqjlwa.jpg"
+/>
+
+## Table of contents
 
 ## I. Why Bother?
 
