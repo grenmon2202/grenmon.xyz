@@ -5,6 +5,5 @@ export async function getAlbumImages(albumId: string) {
   );
   const data = await response.json();
 
-  console.log(data.images.length);
   return data.images;
 }
