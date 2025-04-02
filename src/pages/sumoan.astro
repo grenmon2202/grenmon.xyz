@@ -1,0 +1,89 @@
+<style>
+    @font-face {
+        font-family: "Papyrus";
+        src: local("Papyrus"), url("https://fonts.cdnfonts.com/s/12163/Papyrus.woff") format("woff");
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/photos/papyrus-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: blur(1px);
+        opacity: 0.9;
+        z-index: -1;
+    }
+
+    #typing-container {
+        color: red;
+        font-family: "Papyrus", "Courier New", Courier, monospace;
+        font-size: 1.5rem; /* Increase text size */
+        padding: 20px;
+        width: 80%;
+        margin: 20px auto;
+        text-shadow: 2px 2px 4px black;
+        position: relative;
+        z-index: 1;
+    }
+
+    .line {
+        margin-bottom: 15px;
+    }
+</style>
+
+<div id="background"></div>
+<div id="typing-container"></div>
+
+<script>
+    const lines = [
+        "Only the brave dare to uncover this secret.",
+        "Perhaps you have heard of the legend of Sumoan.",
+        "The story has been passed down for generations.",
+        "In the annals of history, Sumoan's name is etched.",
+        "Many have tried to learn the truth, but few have succeeded.",
+        "Onward, if you have the courage to continue.",
+        "Now, you have been warned."
+    ];
+
+    let currentLineIndex = 0;
+    let currentCharIndex = 0;
+    const container = document.getElementById("typing-container");
+
+    function typeCharacters() {
+        if (currentLineIndex < lines.length) {
+            const line = lines[currentLineIndex];
+            if (currentCharIndex === 0) {
+                const p = document.createElement("p");
+                p.className = "line";
+                p.id = `line-${currentLineIndex}`;
+                if (container) {
+                    container.appendChild(p);
+                }
+            }
+            const currentLineElement = document.getElementById(`line-${currentLineIndex}`);
+            if (currentLineElement) {
+                currentLineElement.textContent += line[currentCharIndex];
+                currentCharIndex++;
+                if (currentCharIndex < line.length) {
+                    setTimeout(typeCharacters, 100); // Adjust character typing speed here (100ms per character)
+                } else {
+                    currentCharIndex = 0;
+                    currentLineIndex++;
+                    setTimeout(typeCharacters, 1500); // Pause before starting the next line
+                }
+            }
+        }
+    }
+
+    typeCharacters();
+</script>
